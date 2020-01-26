@@ -1,24 +1,30 @@
-# README
+# Pile Jockey, Rails 5.2 Edition
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Circle CI](https://circleci.com/gh/trueheart78/pile-jockey.svg?style=shield)](https://circleci.com/gh/trueheart78/pile-jockey)
 
-Things you may want to cover:
+Ruby 2.6 and Rails 5.2, spec'd out with RSpec 3.
 
-* Ruby version
+## Environment Variables
 
-* System dependencies
+The stock `.env` file includes the basics. You should create local `.env.local` and `.env.test` files, that include real values.
 
-* Configuration
+```sh
+cp .env .env.local
+vim .env.local
+```
 
-* Database creation
+## Running Specs
 
-* Database initialization
+RSpec files exist in `spec/`
 
-* How to run the test suite
+```sh
+bundle exec rake spec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Code Coverage
 
-* Deployment instructions
+You can skip the `simplecov` code coverage by using the `SKIP_COVERAGE` environment variable.
 
-* ...
+```sh
+SKIP_COVERAGE=true bundle exec rake spec
+```
