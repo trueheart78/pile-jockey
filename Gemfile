@@ -16,6 +16,7 @@ gem 'turbolinks', '~> 5'
 group :development, :test do
   gem 'pry'
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.9.0'
 end
 
 group :development do
