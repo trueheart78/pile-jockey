@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'dotenv-rails'
+  gem 'faker'
   gem 'pry'
   gem 'rspec-rails', '~> 3.9.0'
   gem 'sqlite3'
