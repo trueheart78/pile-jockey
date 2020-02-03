@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :trackable
 
   # unique :email, :username, :reset_password_token, :confirmation_token
+  validates :email, uniqueness: true
+  validates :username, uniqueness: true
 end
