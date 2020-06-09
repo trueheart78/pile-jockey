@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :game_titles
   namespace :user do
     get 'games/index'
   end
