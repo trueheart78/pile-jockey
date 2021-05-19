@@ -10,7 +10,7 @@ gem 'devise'
 gem 'jquery-rails', '~> 4.3.5' # boostrap requires this
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 4.3'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
